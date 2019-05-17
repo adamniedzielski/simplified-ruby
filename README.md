@@ -25,3 +25,303 @@ This project can also be useful:
   Rails applications?"
 - during technical interviews for introductory Ruby positions
 - for company career ladder to define "basic Ruby knowledge"
+
+## Syntax
+
+### simple types - String, Symbol, Fixnum, Float, nil, booleans
+
+```ruby
+
+"adam"
+:adam
+56
+3.4
+nil
+true
+false
+```
+
+### method call - `.`
+
+```ruby
+"adam".upcase
+```
+
+### binary operators - `+, -, *, /, **, %`
+
+```ruby
+2 + 5.4
+23 - 10
+10 * 2
+9 / 2
+2 ** 3
+8 % 3
+```
+
+### string interpolation
+
+```ruby
+"this is #{4}."
+```
+
+### comparison operators
+
+```ruby
+2 + 2 == 4
+3 != 4
+```
+
+### logical operators - `&&, ||, !`
+
+```ruby
+"adam".length.zero? && 2 + 2 == 4
+"adam".length.zero? || 2 + 2 == 4
+!"adam".length.zero?
+```
+
+### conditional statements - `if / elsif / else`
+
+```ruby
+if "adam".length.zero?
+  "awesome"
+elsif 2 + 2 == 4
+  3
+else
+  "something else"
+end
+
+"test" if 2 + 2 == 4
+```
+
+### container types - Array, Hash
+
+```ruby
+[1, 2, 3]
+{ "age" => 3 }
+```
+
+### short-hand notation for Hash with symbol keys
+
+```ruby
+{ age: 3 }
+```
+
+### local variables
+
+```ruby
+name = "adam"
+```
+
+### assignment operator
+
+```ruby
+age = 2 + 3
+age = "five"
+```
+
+### defining methods
+
+```ruby
+def my_method(argument)
+  "I got #{argument}"
+end
+```
+
+### `return`
+
+```ruby
+def my_method(argument)
+  return "a" if argument.zero?
+
+  "bbb"
+end
+```
+
+### keyword arguments
+
+```ruby
+def my_method(argument, name:, age: 18, city: nil)
+end
+```
+
+### comments
+
+```ruby
+# this is how it works
+```
+
+### blocks
+
+```ruby
+[1, 2].map do |element|
+  element * 2
+end
+```
+
+### defining a class
+
+```ruby
+class User
+end
+```
+
+### `new`
+
+```ruby
+user = User.new("adam")
+```
+
+### instance method
+
+```ruby
+class User
+  def name
+    "adam"
+  end
+end
+```
+
+### instance variable
+
+```ruby
+class User
+  def give_name(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+end
+```
+
+### initialize
+
+```ruby
+class User
+  def initialize(name)
+    @name = name
+  end
+end
+```
+
+
+### `private`
+
+```ruby
+class User
+  def introduce
+    "I am #{age}"
+  end
+
+  private
+
+  def age
+    4
+  end
+end
+```
+
+### `self`
+
+```ruby
+class User
+  def car
+    Car.new(self)
+  end
+end
+```
+
+### class method
+
+```ruby
+class User
+  def self.give_me_three
+    [User.new, User.new, User.new]
+  end
+end
+```
+
+
+### constant inside a class
+
+```ruby
+class User
+  CODE_LENGTH = 3
+
+  def code(name)
+    name.slice(0, CODE_LENGTH)
+  end
+end
+```
+
+### inheritance - `<`
+
+```ruby
+class User
+  def roles
+    []
+  end
+end
+
+class Supervisor < User
+  def roles
+    ["admin", "supervisor"]
+  end
+end
+```
+
+### `super`
+
+```ruby
+class Supervisor < User
+  def code(name)
+    "#{super("ADMIN")} #{super}"
+  end
+end
+```
+
+### nested classes
+
+```ruby
+class Users
+  class Admin
+  end
+end
+
+Users::Admin.new
+```
+
+
+### `attr_reader, attr_writer, attr_accessor`
+
+```ruby
+class User
+  attr_reader :name
+  attr_writer :ago
+  attr_accessor :city
+end
+```
+
+
+### `||=`
+
+```ruby
+class User
+  def give_name(name)
+    @name ||= name
+  end
+end
+```
+
+### `begin / rescue / raise`
+
+```ruby
+begin
+  2 + 2
+  raise "error"
+  4 * 7
+rescue => ex
+  "Aaaa #{ex}!!!"
+end
+```

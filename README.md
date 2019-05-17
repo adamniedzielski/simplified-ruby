@@ -47,7 +47,7 @@ false
 "adam".upcase
 ```
 
-### binary operators - `+, -, *, /, **, %`
+### arthimetical operators - `+, -, *, /, **, %`
 
 ```ruby
 2 + 5.4

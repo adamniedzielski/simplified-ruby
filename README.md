@@ -325,3 +325,36 @@ rescue => ex
   "Aaaa #{ex}!!!"
 end
 ```
+
+## Basic methods
+
+- [Array#each](https://ruby-doc.org/core-2.6.3/Array.html#method-i-each)
+- [Hash#each](https://ruby-doc.org/core-2.6.3/Hash.html#method-i-each)
+- [Enumerable#map](https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-map)
+- [Array#select](https://ruby-doc.org/core-2.6.3/Array.html#method-i-select)
+- [Hash#select](https://ruby-doc.org/core-2.6.3/Hash.html#method-i-select)
+- [Enumerable#each_with_index](https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-each_with_index)
+- [Enumerable#inject](https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-inject)
+- [Array#join](https://ruby-doc.org/core-2.6.3/Array.html#method-i-join)
+- [Array#max](https://ruby-doc.org/core-2.6.3/Array.html#method-i-max)
+- [Array#min](https://ruby-doc.org/core-2.6.3/Array.html#method-i-min)
+- [Array#reverse](https://ruby-doc.org/core-2.6.3/Array.html#method-i-reverse)
+- [Array#size](https://ruby-doc.org/core-2.6.3/Array.html#method-i-size)
+- [Array#uniq](https://ruby-doc.org/core-2.6.3/Array.html#method-i-uniq)
+- [Array#compact](https://ruby-doc.org/core-2.6.3/Array.html#method-i-compact)
+- [Array#include?](https://ruby-doc.org/core-2.6.3/Array.html#method-i-include-3F)
+- [Hash#fetch](https://ruby-doc.org/core-2.6.3/Hash.html#method-i-fetch)
+- [Hash#merge](https://ruby-doc.org/core-2.6.3/Hash.html#method-i-merge)
+- [Hash#slice](https://ruby-doc.org/core-2.6.3/Hash.html#method-i-slice)
+- [Enumerable#find](https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-find)
+- [Enumerable#group_by](https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-group_by)
+- [Emumerable#sort_by](https://ruby-doc.org/core-2.6.3/Enumerable.html#method-i-sort_by)
+- [String#downcase](https://ruby-doc.org/core-2.6.3/String.html#method-i-downcase)
+- [String#upcase](https://ruby-doc.org/core-2.6.3/String.html#method-i-upcase)
+- [String#end_with?](https://ruby-doc.org/core-2.6.3/String.html#method-i-end_with-3F)
+- [String#start_with?](https://ruby-doc.org/core-2.6.3/String.html#method-i-start_with-3F)
+- [String#gsub](https://ruby-doc.org/core-2.6.3/String.html#method-i-gsub)
+- [String#include?](https://ruby-doc.org/core-2.6.3/String.html#method-i-include-3F)
+- [String#length](https://ruby-doc.org/core-2.6.3/String.html#method-i-length)
+- [String#match?](https://ruby-doc.org/core-2.6.3/String.html#method-i-match-3F)
+- [String#split](https://ruby-doc.org/core-2.6.3/String.html#method-i-split)
